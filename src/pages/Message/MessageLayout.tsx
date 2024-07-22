@@ -10,8 +10,8 @@ const MessageLayout = () => {
       <Box display={{initial:'none',md:'block'}} className=" border-r border-gray">
       {location !== '/messages/:id' && <Messages />}
       </Box>
-      <Box display={{initial:'block',md:'none'}} className=" border-r border-gray">
-      {location === '/messages/:id'? null : location === 'messages/'? <Messages /> : null}
+      <Box display={{initial:'block',md:'none'}} className="border-r border-gray">
+      {location === '/messages'? <Messages /> : null}
       </Box>
       <Box display={{initial:'block'}} className="">
         <Outlet />

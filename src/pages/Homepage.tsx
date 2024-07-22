@@ -11,8 +11,8 @@ export const Homepage = () => {
         <LeftSidebar />
       </Flex>
 
-      <Box p={{ initial: "2" }} className="overflow-y-scroll flex w-full flex-col items-center justify-center">
-        <Box className="flex flex-col ">
+      <Box p={{ initial: "2" }} className="overflow-y-scroll flex w-full h-screen">
+        <Box className="">
           <Outlet/>
         </Box>
       </Box>

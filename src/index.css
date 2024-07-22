@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 *{
-/* outline:solid 1px red;*/
+outline:solid 1px red;
 }
 
 /*style the arrow inside the select element:*/

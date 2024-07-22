@@ -37,7 +37,6 @@ const Messagepage = () => {
   const handleEmojiClick = (e) => {
     setText((prev) => prev + e.emoji);
   };
-  console.log(text);
   return (
     <div className="grid grid-rows-[auto,1fr] max-h-[93vh]">
       <div className="lg:pr-4">
