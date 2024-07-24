@@ -7,13 +7,11 @@ import {
   Text,
   Badge,
   Avatar,
-  TextArea,
   DropdownMenu,
-  ScrollArea,
 } from "@radix-ui/themes";
 import king from "/king.png";
 import { useState, useRef, useEffect } from "react";
-import EmojiPicker from "emoji-picker-react";
+import EmojiPicker, { EmojiClickData } from "emoji-picker-react";
 import { FiPhone, FiSend } from "react-icons/fi";
 import {
   DotFilledIcon,
@@ -26,15 +24,15 @@ import messages from "./data";
 
 const Messagepage = () => {
   const { id } = useParams();
-  const currentMessage = messages.filter((m) => m.id == id)[0];
-  console.log(currentMessage);
+  const messageId = parseInt(id!)
+  const currentMessage = messages.filter((m) => m.id == messageId)[0]
   const [open, setOpen] = useState(false);
   const [text, setText] = useState("");
   const endRef = useRef<HTMLElement | null>(null);
   useEffect(() => {
     endRef.current?.focus();
   }, []);
-  const handleEmojiClick = (e) => {
+  const handleEmojiClick = (e:EmojiClickData) => {
     setText((prev) => prev + e.emoji);
   };
   return (

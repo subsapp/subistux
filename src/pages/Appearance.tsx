@@ -1,4 +1,4 @@
-import { Box, Button, RadioGroup, Flex, Text } from "@radix-ui/themes";
+import { Box,Flex, Text } from "@radix-ui/themes";
 import logo from "../assets/logo.svg";
 
 const Appearance = () => {
@@ -23,13 +23,13 @@ const Appearance = () => {
             <div>
             <input type="radio" id="html" name="fav_language" value="HTML"/>
 
-              <label for="html">Light mode</label><br/>
+              <label>Light mode</label><br/>
               </div>
             <div>
 
             <img className="w-60" src={logo} alt="logo" />
             <input type="radio" id="html" name="fav_language" value="HTML"/>
-              <label for="html">Dark mode</label><br/>
+              <label>Dark mode</label><br/>
             </div>
               </form>
             </Box>

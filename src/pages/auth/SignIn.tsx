@@ -1,20 +1,19 @@
 import { Box, Button, Flex, Text } from "@radix-ui/themes";
 import logo from "../../assets/logo.svg";
 import { useForm } from "react-hook-form";
-import { FormEvent, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { FormEvent } from "react";
+// import { useNavigate } from "react-router-dom";
 
 type FormData = {
   register: string;
 };
 const Signin = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const {
     register,
     formState: { errors },
-    reset,
-    handleSubmit,
+    // reset,
+    // handleSubmit,
   } = useForm<FormData>();
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();

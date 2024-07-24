@@ -1,17 +1,16 @@
 import { createBrowserRouter } from 'react-router-dom'
+import Layout from '../components/Layout'
 import Appearances from '../pages/Appearance'
 import ErrorPage from '../pages/ErrorPage'
-import MessageLayout from "../pages/Message/MessageLayout"
 import { Homepage } from '../pages/Homepage'
+import MessageLayout from "../pages/Message/MessageLayout"
 import Messagepage from '../pages/Message/Messagepage'
-import Layout from '../components/Layout'
 import Trending from '../pages/Trending'
 import SignIn from '../pages/auth/SignIn'
 import Signup from '../pages/auth/Signup'
-import Messages from '../pages/Message/Messages'
-import SettingLayout from '../pages/settings/SettingLayout'
-import {Appearance,Blocked,Delete,Notifications,Privacy,Profile,Purge,Subscribe,General,Security} from '../pages/settings/pages'
 import Post from '../pages/posts/Post'
+import SettingLayout from '../pages/settings/SettingLayout'
+import { Appearance, Blocked, Delete, General, Notifications, Privacy, Profile, Purge, Security, Subscribe } from '../pages/settings/pages'
 
 const router = createBrowserRouter([
   {

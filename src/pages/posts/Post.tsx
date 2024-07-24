@@ -1,4 +1,4 @@
-import { Separator, Avatar, Flex, Box, Text, Inset, Strong } from '@radix-ui/themes'
+import { Separator, Avatar, Flex, Box, Text, Inset } from '@radix-ui/themes'
 import { DotsVerticalIcon } from '@radix-ui/react-icons'
 import { BiSolidMessageRounded } from "react-icons/bi";
 import { FaRetweet } from "react-icons/fa6";

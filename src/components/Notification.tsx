@@ -1,4 +1,4 @@
-import { Box, Flex, Button, Text, Heading,Separator } from "@radix-ui/themes";
+import { Box, Flex, Text, Heading,Separator } from "@radix-ui/themes";
 import { GoGear } from "react-icons/go";
 import { IoReturnUpBack } from "react-icons/io5";
 import { LuMoreHorizontal } from "react-icons/lu";

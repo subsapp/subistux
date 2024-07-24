@@ -1,9 +1,7 @@
 import { Box, Flex } from "@radix-ui/themes";
 import { Outlet } from 'react-router-dom';
-import Comments from "../components/Comments";
 import LeftSidebar from "../components/LeftSidebar";
 import RightSidebar from "../components/RightSidebar";
-import Post from "./posts/Post";
 export const Homepage = () => {
   return (
     <div className="lg:grid lg:grid-cols-[15%,1fr,20%] h-screen">
@@ -11,7 +9,7 @@ export const Homepage = () => {
         <LeftSidebar />
       </Flex>
 
-      <Box p={{ initial: "2" }} className="overflow-y-scroll flex w-full h-screen">
+      <Box p={{ initial: "2" }} className="overflow-y-scroll max-w-[900px] mx-auto h-screen">
         <Box className="">
           <Outlet/>
         </Box>

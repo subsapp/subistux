@@ -8,9 +8,6 @@ body {
   max-height: 100vh;
   overflow-x: hidden;
 }
-*{
-outline:solid 1px red;
-}
 
 /*style the arrow inside the select element:*/
 .select-selected:after {
